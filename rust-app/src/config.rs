@@ -4,6 +4,7 @@ use std::path::PathBuf;
 #[derive(Debug, Clone)]
 pub enum StorageType {
     File,
+
     #[cfg(feature = "postgres")]
     Postgres,
 }
@@ -11,9 +12,13 @@ pub enum StorageType {
 #[derive(Debug, Clone)]
 pub struct Config {
     pub host: String,
+
     pub port: u16,
+
     pub storage_type: StorageType,
+
     pub storage_path: PathBuf,
+
     #[cfg(feature = "postgres")]
     pub database_url: Option<String>,
 }

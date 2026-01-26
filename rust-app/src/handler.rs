@@ -13,14 +13,19 @@ use crate::username::Username;
 #[derive(Debug, Deserialize)]
 pub struct BadgeQuery {
     pub username: String,
+
     #[serde(default = "default_color")]
     pub color: String,
+
     #[serde(default)]
     pub style: Option<String>,
+
     #[serde(default = "default_label")]
     pub label: String,
+
     #[serde(default)]
     pub base: Option<u64>,
+
     #[serde(default)]
     pub abbreviated: bool,
 }
