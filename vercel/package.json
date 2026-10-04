@@ -1,0 +1,6 @@
+{
+  "name": "diaoenmao-komarev-relay",
+  "private": true,
+  "engines": { "node": "22.x" },
+  "scripts": { "test": "node --test tests/views.test.js" }
+}
