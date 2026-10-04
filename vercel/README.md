@@ -3,7 +3,7 @@
 This directory provides a dependency-free Vercel relay for `diaoenmao`'s existing
 Komarev badge. The original PHP project remains in the repository root.
 
-Import this fork into Vercel, choose **Other**, and select `vercel` as the Root
+Import this fork into Vercel, choose **Other**, and use the repository root as the Root
 Directory. Leave build/output settings at their defaults. No database, credentials,
 or environment variables are needed. The badge is served at `/api/views` or `/ghpvc/`.
 

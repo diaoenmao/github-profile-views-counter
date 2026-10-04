@@ -1,0 +1,12 @@
+.docker/
+.github/
+contracts/
+src/
+storage/
+public/
+composer.json
+composer.lock
+docker-compose.yaml
+Makefile
+.env*
+vercel/tests/
